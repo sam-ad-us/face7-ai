@@ -3,15 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- SEO Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="ArtVision AI - Transform your ideas into stunning artwork using advanced AI technology" />
+    
+    <!-- Open Graph Tags -->
     <meta property="og:title" content="ArtVision AI - AI Image Generation" />
     <meta property="og:description" content="Transform your ideas into stunning artwork using advanced AI technology" />
     <meta property="og:type" content="website" />
+
+    <!-- Title -->
     <title>ArtVision AI - AI Image Generation</title>
+
+    <!-- Importing Tailwind CSS and custom styles -->
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <!-- Optional: Preloading favicon for performance -->
+    <link rel="preload" as="image" href="/favicon.svg" />
+
+    <!-- Optional: preload App.jsx if using SSR -->
+    <link rel="modulepreload" href="/src/App.jsx" />
+    <link rel="modulepreload" href="/src/main.jsx" />
+    <link rel="modulepreload" href="/src/components/Navbar.jsx" />
+    <link rel="modulepreload" href="/src/components/ContactModal.jsx" />
+    <link rel="modulepreload" href="/src/pages/Home.jsx" />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
-</html> 
+</html>
